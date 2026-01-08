@@ -1,12 +1,10 @@
 ---
-import Counter from "../components/Counter.vue"
-import '../assets/global.css'
+import '../assets/global.css';
+import { Github, Linkedin } from 'lucide-vue-next';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
-
-<Counter client:load />
 
 <html>
   <head>
@@ -14,7 +12,15 @@ import '../assets/global.css'
   </head>
   <body>
     <div class="container mx-auto px-4 pt-5">
-      <h1 class="font-mono text-2xl">Alfrendo Silalahi</h1>
+      <div class="flex justify-between">
+        <h1 class="font-mono text-2xl">Alfrendo Silalahi</h1>
+        <div class="flex gap-5">
+          <a href="https://github.com/alfrendo-silalahi" target="_blank"
+            ><Github /></a
+          >
+          <a href="#"><Linkedin /></a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
