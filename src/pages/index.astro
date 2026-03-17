@@ -1,6 +1,7 @@
 ---
 import '../assets/global.css';
 import { Github, Linkedin } from 'lucide-vue-next';
+import HeroSection from '../components/HeroSection.vue';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -9,19 +10,22 @@ import { Github, Linkedin } from 'lucide-vue-next';
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alfrendo Silalahi</title>
+    <title>alfrendo silalahi</title>
   </head>
   <body>
     <div class="container mx-auto px-4 pt-5">
-      <div class="flex justify-between items-center">
-        <h1 class="font-mono text-lg lg:text-2xl">Alfrendo Silalahi</h1>
+      <div class="flex justify-between items-center mb-20">
+        <h1 class="font-mono text-lg lg:text-xl">alfrendo silalahi</h1>
         <div class="flex gap-5">
           <a href="https://github.com/alfrendo-silalahi" target="_blank"
-            ><Github class="w-5 h-5 lg:w-7 lg:h-7" /></a
+            ><Github /></a
           >
-          <a href="#"><Linkedin class:list="w-5 h-5 lg:w-7 lg:h-7" /></a>
+          <a href="#"><Linkedin /></a>
         </div>
       </div>
+
+      <!-- Hero Section -->
+      <HeroSection />
     </div>
   </body>
 </html>
